@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px
+  }
+  @font-face {
+    font-family: 'Comfortaa';
+    src: url('tipografias/Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('tipografias/Comfortaa-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('tipografias/Comfortaa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('tipografias/Comfortaa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('tipografias/Comfortaa-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    font-family: 'comfortaa', sans-serif;
+}
+  .unavida {
+    color: #ffffff;
+  }
+  .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #D4822B; 
+      z-index: 1; /* Asegúrate de que el navbar esté sobre el contenido de la página */
+  }
+  
+  .hamburger-icon {
+      font-size: 30px;
+      cursor: pointer;
+      margin-right: 20px;
+  }
+  
+  .logo {
+      margin-left: 20px;
+      /* Estilos para tu logo aquí */
+      font-weight: bold;
+  }
+  
+  .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #2A3336; /* Color de fondo del menú */
+      overflow-x: hidden;
+      transition: 0.3s; /* Transición suave para abrir y cerrar */
+      padding-top: 60px;
+    padding-bottom: 10px;
+  }
+  
+  .side-menu a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #ffffff;
+      display: block;
+      transition: 0.3s;
+  }
+  
+  .side-menu__button:hover {
+    background-color: #ffffff;
+    color: #2A3336;
+}
+  
+  .side-menu .closebtn {
+      position: absolute;
+      top: 0;
+      right: 22px;
+      font-size: 36px;
+      margin-left: 50px;
+      cursor: pointer;
+  }
+  
+ 
+
+  /* Estilos para los íconos de redes sociales */
+.social-media-icons {
+    position: absolute;
+    bottom: 3px;
+    width: 100%; /* Esto hará que los íconos ocupen todo el ancho del menú */
+    /* Agrega padding o margin si es necesario para separar los íconos del fondo */
+    padding-bottom: 70px;
+}
+
+/* Estilos para los enlaces de las redes sociales dentro del div */
+.social-media-icons a {
+    display: inline-block; /* o inline-block, dependiendo de cómo quieras que se muestren */
+     /* Ajusta el margen según sea necesario */
+     /* Centra los íconos si están en bloques separados */
+     
+}
+
+/* Ajustes para las imágenes de los íconos si es necesario */
+.social-media-icons img {
+    max-width: 18px; /* Asegúrate de que las imágenes no sean más grandes que el contenedor */
+    height: 17px; /* Mantiene la proporción de las imágenes */
+}
+
+.social-media-icons a:hover {
+    background-color: rgba(125, 125, 125, 0.505);
+}
+
+/* carrousel */
+
+.carrusel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; /* Asegura que los elementos fuera del carrusel no sean visibles */
+    max-height: 600px;
+}
+
+.slides {
+    display: none; /* Oculta todos los slides por defecto */
+    width: 100%; /* Hace que cada slide ocupe el 100% del ancho del carrusel */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+.text {
+    position: absolute;
+    bottom: 250px; /* o cualquier otro valor según tu diseño */
+    width: 80%;
+    text-align: start;
+    color: #ffffff;
+    font-size: 20px; /* Ajusta esto según tus necesidades */
+    margin: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.text-2slide {
+    position: absolute;
+    bottom: 250px; /* o cualquier otro valor según tu diseño */
+    width: 80%;
+    text-align: end;
+    color: #ffffff;
+    font-size: 20px; /* Ajusta esto según tus necesidades */
+    margin: 25px;
+    margin-bottom: 5px;
+}
+
+/* Animación fade (puedes omitir esta parte si prefieres sin animación) */
+@keyframes fade {
+    from {opacity: 4}
+    to {opacity: 1}
+}
+
+/* Asegura la responsividad del texto y las imágenes */
+@media screen and (max-width: 768px) {
+    .text .text-2slide {
+        font-size: 15px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+        bottom: 350px;
+        
+    }
+    .carrusel {
+        max-height: 500px;
+    }
+    /* Ajusta otros estilos según sea necesario */
+}
+.text1-carrousel {
+    display: inline-block;
+    border-top: 1px solid #ffffff;
+    padding-top: 7px;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.text2-carrousel{
+    color: #efc89ecd;
+}
+
+.text3-carrousel {
+    display: inline-block;
+    border-top: 1px solid #2A3336;
+    padding-top: 7px;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 18px;
+}
