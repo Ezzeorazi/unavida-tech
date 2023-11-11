@@ -225,6 +225,33 @@ body {
     background-color: gray; /* Color de fondo más oscuro al pasar el mouse */
 }
 
+.flecha {
+    display: flex;
+    margin: 30px;
+    padding-top: 50px;
+}
+
+.flecha img {
+    width: 60px;
+    height: 60px;
+}
+
+.flecha-text {
+    display: flex;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+}
+
+.flecha-text h3 {
+    font-size: 30px;
+}
+.flecha-text img {
+    width: 35px;
+    height: 35px;
+}
+
+
 /* Asegura la responsividad del texto y las imágenes */
 @media screen and (max-width: 768px) {
     .text {
@@ -247,4 +274,22 @@ body {
         font-size: 18px;
         bottom: 100px;
     }
+    .flecha {
+        display: flex;
+        margin: 10px;
+        padding-top: 30px;
+    }
+
+    .flecha img {
+        width: 40px;
+        height:40px;
+    }
+    .flecha-text h3 {
+        font-size: 15px;
+    }
+    .flecha-text img {
+        width: 25px;
+        height: 25px;
+    }
+    
 }
