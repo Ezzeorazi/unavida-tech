@@ -238,9 +238,10 @@ body {
 
 .flecha-text {
     display: flex;
-   margin: auto;
    justify-content: center;
-   align-items: center;
+    position: relative;
+    bottom: 80px;
+   
 }
 
 .flecha-text h3 {
@@ -257,8 +258,8 @@ body {
     .text {
         font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
         bottom: 250px;
-        width: 90%;
-        margin-left: 50px;
+        width: 80%;
+        margin-left: 40px;
     }
     .text-2slide {
         font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
@@ -275,21 +276,26 @@ body {
         bottom: 100px;
     }
     .flecha {
-        display: flex;
         margin: 10px;
         padding-top: 30px;
     }
 
     .flecha img {
-        width: 40px;
-        height:40px;
+        display: none;
+
+        width: 30px;
+        height:30px;
+    }
+
+    .flecha-text{
+        bottom: 10px;
     }
     .flecha-text h3 {
-        font-size: 15px;
+        font-size: 12px;
     }
     .flecha-text img {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
     
 }
