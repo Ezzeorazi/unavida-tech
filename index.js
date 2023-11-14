@@ -19,7 +19,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 6000); // Cambia cada 5 segundos
+    setTimeout(showSlides, 10000); // Cambia cada 10 segundos
 }
 
 const phrases = ["nativa digital.", "multicultural."];
@@ -28,7 +28,7 @@ let currentCharacter = 0;
 const typedText = document.getElementById("typed-text");
 const typingDelay = 80;
 const erasingDelay = 50;
-const newTextDelay = 3000; // Delay entre palabras
+const newTextDelay = 2000; // Delay entre palabras
 
 function type() {
   if (currentCharacter < phrases[currentPhrase].length) {
