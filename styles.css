@@ -342,8 +342,9 @@ body {
 
   .linea-flecha-arriba {
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     margin-top: 30px;
+    margin-right: 25px;
 }
 
 .linea-media {
@@ -356,17 +357,83 @@ body {
 .flecha-arriba {
     position: absolute; /* Posición absoluta para la flecha */
     top: 50%; /* Centrar la flecha verticalmente */
-    right: 20px; /* Alinear la flecha a la derecha */
     transform: translateY(-50%); /* Asegurarse de que la flecha esté centrada verticalmente respecto a la línea */
-
+    right: 0;
 }
 
-/* Si estás usando una imagen para la flecha */
 .flecha-arriba img {
     display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
     width: 60px; 
     height: 60px;
 }
+
+/* Formulario de contacto */
+
+.contact-form-container {
+    max-width: 60%; /* O el ancho que prefieras */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: start;
+}
+
+.contact-form-container h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.work-together-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #2A3336;
+    color: #ffffff;
+    border-radius: 18px;
+    border: none;
+    font-size: 18px;
+    display: block;
+    width: 200px;
+    margin: 20px auto; 
+}
+
+.contact-form {
+    background: #ffffff; /* O el color que prefieras */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre campos del formulario */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2A3336; 
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #2A3336; /* Línea debajo del input */
+    font-size: 15px; /* Ajustar según el diseño */
+}
+
+
+.submit-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #2A3336;
+    color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    display: block;
+    width: 110px;
+    margin: 20px auto; 
+}
+
+
+
 
 
 
@@ -409,7 +476,7 @@ body {
     }
     .flecha {
         margin: 10px;
-        padding-top: 40px;
+        padding-top: 30px;
         display: flex;
         justify-content: center;
     }
@@ -454,8 +521,8 @@ body {
     .flecha-arriba {
         display: flex;
         justify-content: center;
-        margin: 0 auto;
-        right: 50%;
+        margin-top: 50px;
+        right: 44%;
     }
 
     .linea-media{
@@ -465,7 +532,17 @@ body {
     .flecha-arriba img{
         width: 30px;
         height: auto;
-        margin-top: 80px;
+        
+    }
+
+    .work-together-btn {
+        width: 160px;
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        width: 80px;
+        font-size: 15px;
     }
     
 }
