@@ -312,7 +312,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2; /* Asegúrate de que el texto esté por encima de las imágenes */
+    z-index: 0; /* Asegúrate de que el texto esté por encima de las imágenes */
   }
   
   .carousel-text h2 {
