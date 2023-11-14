@@ -284,6 +284,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
+    max-height: 600px;
   }
   
   .carousel-slide {
@@ -396,5 +397,8 @@ body {
         border-radius: 15px;
         font-size: 18px;
       }
+    .carousel-container{
+        max-height: 450px;
+    }
     
 }
