@@ -370,14 +370,14 @@ body {
 /* Formulario de contacto */
 
 .contact-form-container {
-    max-width: 60%; /* O el ancho que prefieras */
+    max-width: 50%; /* O el ancho que prefieras */
     margin: 0 auto;
     padding: 20px;
     text-align: start;
 }
 
 .contact-form-container h2 {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
