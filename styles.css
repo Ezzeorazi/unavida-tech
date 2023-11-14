@@ -39,9 +39,7 @@
 body {
     font-family: 'comfortaa', sans-serif;
 }
-  .unavida {
-    color: #ffffff;
-  }
+ 
   .navbar {
       position: fixed;
       top: 0;
@@ -50,19 +48,38 @@ body {
       justify-content: space-between;
       align-items: center;
       background-color: #D4822B; 
-      z-index: 1; /* Asegúrate de que el navbar esté sobre el contenido de la página */
+      z-index: 1; 
   }
-  
+  .navbar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5%; /* o el ancho que desees para la sección pintada */
+    height: 100%;
+    background-color: #2A3336; /* Cambia al color que desees */
+    z-index: -1;
+  }
+
   .hamburger-icon {
       font-size: 30px;
       cursor: pointer;
-      margin-right: 20px;
+      width: 5%;
+      background-color: #2A3336;
+      color: #ffffff;
+      justify-content: center;
+      justify-items: center;
+  }
+  .hamburger-icon p {
+    margin-left: 15px;
+    font-size: 35px;
   }
   
   .logo {
-      margin-left: 20px;
-      /* Estilos para tu logo aquí */
-      font-weight: bold;
+      margin-left: 100px;
+  }
+  .logo img {
+    width: 160px;
   }
   
   .side-menu {
@@ -135,7 +152,7 @@ body {
 
 .carrusel {
     position: relative;
-    width: auto;;
+    width: 90%;;
     margin: auto;
     overflow: hidden; /* Asegura que los elementos fuera del carrusel no sean visibles */
     max-height: 600px;
@@ -188,6 +205,17 @@ body {
     font-weight: 100;
     font-size: 18px;
 }
+
+.cursor {
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
 
 .text2-carrousel{
     color: #efc89ecd;
@@ -255,6 +283,18 @@ body {
 
 /* Asegura la responsividad del texto y las imágenes */
 @media screen and (max-width: 768px) {
+    .hamburger-icon {
+        background-color: #D4822B;
+        color: #2A3336;
+        margin-right: 30px;
+    }
+    .navbar::before{
+        background-color: #D4822B;
+    }
+    .logo img {
+        margin-left: -50px;
+    }
+    
     .text {
         font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
         bottom: 250px;
@@ -269,6 +309,7 @@ body {
     }
     .carrusel {
         max-height: 450px;
+        width: 100%;
     }
     .learn-more-btn {
         margin-left: 80px; 
@@ -278,23 +319,28 @@ body {
     .flecha {
         margin: 10px;
         padding-top: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     .flecha img{
-        display: none;
         width: 30px;
-        height:30px;
+        height: auto;
     }
 
     .flecha-text{
-        bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
     }
     .flecha-text h3 {
         font-size: 12px;
     }
     .flecha-text img {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
     }
     
 }
+

@@ -19,5 +19,40 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 5000); // Cambia cada 5 segundos
+    setTimeout(showSlides, 6000); // Cambia cada 5 segundos
 }
+
+const phrases = ["nativa digital.", "multicultural."];
+let currentPhrase = 0;
+let currentCharacter = 0;
+const typedText = document.getElementById("typed-text");
+const typingDelay = 80;
+const erasingDelay = 50;
+const newTextDelay = 3000; // Delay entre palabras
+
+function type() {
+  if (currentCharacter < phrases[currentPhrase].length) {
+    typedText.textContent += phrases[currentPhrase].charAt(currentCharacter);
+    currentCharacter++;
+    setTimeout(type, typingDelay);
+  } else {
+    // Espera antes de empezar a borrar
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (currentCharacter > 0) {
+    typedText.textContent = phrases[currentPhrase].substring(0, currentCharacter - 1);
+    currentCharacter--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    currentPhrase = (currentPhrase + 1) % phrases.length; // Cambia a la siguiente frase
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+// Inicia el efecto al cargar la página
+document.addEventListener("DOMContentLoaded", function() {
+  if (phrases.length) setTimeout(type, newTextDelay + 250);
+});
