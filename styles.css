@@ -1,6 +1,6 @@
 *{
     margin: 0px;
-    padding: 0px
+    padding: 0px;
   }
   @font-face {
     font-family: 'Comfortaa';
@@ -280,6 +280,53 @@ body {
     height: 35px;
 }
 
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    display: block;
+  }
+  
+
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Asegúrate de que el texto esté por encima de las imágenes */
+  }
+  
+  .carousel-text h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+  }
+  
+  .carousel-text button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #2A3336;
+    color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+  }
 
 /* Asegura la responsividad del texto y las imágenes */
 @media screen and (max-width: 768px) {
@@ -341,6 +388,13 @@ body {
         width: 15px;
         height: 15px;
     }
+    .carousel-text h2 {
+        font-size: 20px;
+    }
+    .carousel-text button {
+        padding: 10px 15px;
+        border-radius: 15px;
+        font-size: 18px;
+      }
     
 }
-

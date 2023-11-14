@@ -56,3 +56,23 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() {
   if (phrases.length) setTimeout(type, newTextDelay + 250);
 });
+
+
+let index2 = 0;
+
+function showSlides2() {
+  const slides2 = document.querySelectorAll('.carousel-item');
+  if (index2 >= slides2.length) index2 = 0;
+  if (index2 < 0) index2 = slides2.length - 1;
+  for (let slide2 of slides2) {
+    slide2.style.transform = `translateX(${-index2 * 100}%)`;
+  }
+}
+
+
+
+// Iniciar el carrusel automáticamente
+setInterval(function() {
+  index2++;
+  showSlides2();
+}, 3000); // Cambia cada 3 segundos
