@@ -534,11 +534,14 @@ body {
         height: auto;
         
     }
-
+    .contact-form-container {
+        max-width: 80%;
+    }
     .work-together-btn {
         width: 160px;
         font-size: 15px;
         padding: 8px 18px;
+        margin-bottom: 30px;
     }
 
     .submit-btn {
