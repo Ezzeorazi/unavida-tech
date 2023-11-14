@@ -433,11 +433,74 @@ body {
     margin: 20px auto; 
 }
 
+/* Footer */
 
+.footer-superior {
+    display: flex;
+    justify-content: center;
+    background-color: #D4822B;
+    height: 45px;
+    color: #ffffff;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+}
 
+.footer-superior a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+}
+.footer-superior p {
+    font-weight: bold;
+}
 
+.footer-inferior {
+    background-color: #2A3336;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+}
+.logo-footer {
+    height: 15px;
+    margin-right: 15px;
+    margin-left: 60px;
+}
 
+.footer-inferior span {
+    height: 45px;
+    background-color: #D4822B;
+    display: flex;
+    justify-content: start;
+    width: 5%;
+}
 
+.footer-inferior .span2 {
+    height: 45px;
+    background-color: #D4822B;
+    position: absolute;
+    right: 0;
+    width: 5%;
+}
+
+.social-media-icons-footer {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-right: 100px;
+}
+
+.social-media-icons-footer img {
+    height: 20px;
+    margin-left: 25px;
+}
+
+.social-media-icons-footer img:hover {
+    transform: scale(1.3);
+}
 
 
 /* Asegura la responsividad del texto y las imágenes */
@@ -549,5 +612,65 @@ body {
         width: 80px;
         font-size: 15px;
     }
+
+    .footer-superior {
+        display: flex;
+        justify-content: center;
+        background-color: #D4822B;
+        height: 45px;
+        color: #ffffff;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        font-size: 15px;
+    }
+    .footer-superior a {
+        margin-left: 5px;
+    }
+    
+  
+    .footer-inferior {
+        background-color: #2A3336;
+        display: flex;
+        justify-content: space-between;
+        height: 45px;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+    }
+    .logo-footer {
+        display: none;
+    }
+    
+    .footer-inferior span {
+       
+        display: none;
+      
+    }
+    
+    .footer-inferior p{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .footer-inferior .span2 {
+        display: none;
+    }
+    
+    .social-media-icons-footer {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        margin-right: 50px;
+    }
+    
+    .social-media-icons-footer img {
+        height: 15px;
+        margin-left: 15px;
+    }
+    
+    .social-media-icons-footer img:hover {
+        transform: scale(1.3);
+    }
+    
     
 }
