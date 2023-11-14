@@ -274,11 +274,14 @@ body {
 
 .flecha-text h3 {
     font-size: 30px;
+    color: #2A3336;
 }
 .flecha-text img {
     width: 35px;
     height: 35px;
 }
+
+/* carousel 2 */
 
 .carousel-container {
     position: relative;
@@ -329,6 +332,46 @@ body {
     font-size: 20px;
   }
 
+  .carousel-text2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 25px;
+  }
+  /* separador */
+
+  .linea-flecha-arriba {
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: 30px;
+}
+
+.linea-media {
+    display: relative; 
+    width: 250px; 
+    border-top: 2px solid #000;
+    margin: 0 auto; 
+}
+
+.flecha-arriba {
+    position: absolute; /* Posición absoluta para la flecha */
+    top: 50%; /* Centrar la flecha verticalmente */
+    right: 20px; /* Alinear la flecha a la derecha */
+    transform: translateY(-50%); /* Asegurarse de que la flecha esté centrada verticalmente respecto a la línea */
+
+}
+
+/* Si estás usando una imagen para la flecha */
+.flecha-arriba img {
+    display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
+    width: 60px; 
+    height: 60px;
+}
+
+
+
+
+
 /* Asegura la responsividad del texto y las imágenes */
 @media screen and (max-width: 768px) {
     .hamburger-icon {
@@ -366,7 +409,7 @@ body {
     }
     .flecha {
         margin: 10px;
-        padding-top: 30px;
+        padding-top: 40px;
         display: flex;
         justify-content: center;
     }
@@ -383,7 +426,7 @@ body {
         margin-top: 25px;
     }
     .flecha-text h3 {
-        font-size: 12px;
+        font-size: 15px;
     }
     .flecha-text img {
         width: 15px;
@@ -399,6 +442,30 @@ body {
       }
     .carousel-container{
         max-height: 450px;
+    }
+    .carousel-text2 {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    .linea-flecha-arriba {
+        margin-top: 15px;
+    }
+
+    .flecha-arriba {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        right: 48%;
+    }
+
+    .linea-media{
+        width: 150px;
+        margin: 0 auto;
+    }
+    .flecha-arriba img{
+        width: 30px;
+        height: auto;
+        margin-top: 80px;
     }
     
 }
