@@ -75,4 +75,4 @@ function showSlides2() {
 setInterval(function() {
   index2++;
   showSlides2();
-}, 3000); // Cambia cada 3 segundos
+}, 5000); // Cambia cada 5 segundos
