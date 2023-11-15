@@ -77,17 +77,3 @@ setInterval(function() {
   showSlides2();
 }, 5000); // Cambia cada 5 segundos
 
-
-// function toggleSections(activeSectionId) {
-//   // Obtén todas las secciones
-//   var sections = document.querySelectorAll('.carrusel, .flecha, .flecha-text, .carousel-container, .carousel-text2, .linea-flecha-arriba');
-
-//   // Oculta todas las secciones
-//   sections.forEach(function(section) {
-//       section.style.display = 'none';
-//   });
-
-//   // Muestra la sección activa
-//   var activeSection = document.getElementById(activeSectionId);
-//   activeSection.style.display = 'block'; // o 'relative' si es necesario
-// }

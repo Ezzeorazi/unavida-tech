@@ -1,0 +1,62 @@
+.container-nosotros{
+    margin-top: 80px;
+    margin-left: 15% ;
+    font-size: x-large;
+}
+
+.container-nosotros img {
+    width: 640px;
+    height: 347px;
+    margin-left: 3% ;
+    margin-top: 35px;
+    border-radius: 15px;
+}
+
+.container-nosotros p {
+    width: 65%;
+    font-size: large;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+/* que hacemos */
+
+.container-nosotros ul {
+    list-style: none; 
+    width: 65%;
+    font-size: large;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+.container-nosotros li {
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-nosotros{
+        margin-top: 80px;
+        margin-left: 5% ;
+    }
+    .container-nosotros img {
+        width: 75%;
+        height: auto;
+        margin-left: 2% ;
+        margin-top: 25px;
+        border-radius: 15px;
+    }
+    
+    .container-nosotros p {
+        width: 80%;
+        font-size: x-large;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .container-nosotros ul {
+        width: 85%;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    
+}
