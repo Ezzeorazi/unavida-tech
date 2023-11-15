@@ -244,7 +244,7 @@ body {
 .flecha {
     position: flex;
     margin: 30px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .flecha img {
@@ -256,7 +256,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 80px;
+    bottom: 30px;
    
 }
 
@@ -362,6 +362,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: start;
+    margin-top: -40px;
 }
 
 .contact-form-container h2 {
@@ -384,6 +385,7 @@ body {
 
 .contact-form {
     background: #ffffff; 
+    margin-top: 80px;
 }
 
 .form-group {
@@ -543,7 +545,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 25px;
+        margin-top: -35px;
     }
     .flecha-text h3 {
         font-size: 15px;
@@ -568,7 +570,7 @@ body {
         font-size: 15px;
     }
     .linea-flecha-arriba {
-        margin-top: 15px;
+        margin-top: 0px;
     }
 
     .flecha-arriba {
@@ -592,6 +594,7 @@ body {
     }
     .contact-form-container {
         max-width: 80%;
+        margin-top: -65px;
     }
     .work-together-btn {
         width: 160px;
