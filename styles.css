@@ -233,7 +233,7 @@ body {
     transition: background-color 0.5s ease; 
     font-weight: 600;    
     border-radius: 15px;   
-    
+    text-decoration: none;
 }
 
 
