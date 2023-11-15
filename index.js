@@ -77,3 +77,15 @@ setInterval(function() {
   showSlides2();
 }, 5000); // Cambia cada 5 segundos
 
+document.querySelectorAll('.contact').forEach(button => {
+  button.addEventListener('click', function(e) {
+    e.preventDefault(); // Previene el comportamiento de salto por defecto
+    const targetId = this.getAttribute('href'); // Obtiene el ID del elemento de destino, como '#contact'
+    const targetElement = document.querySelector(targetId); // Encuentra el elemento en el DOM
+
+    // Desplazamiento suave hacia el elemento de destino
+    targetElement.scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  });
+});
