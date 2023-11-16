@@ -455,7 +455,6 @@ body {
     color: #ffffff;
     align-items: center;
     width: 100%;
-    margin-left: 45px;
 }
 .footer-superior .span1 {
     height: 45px;
@@ -528,10 +527,7 @@ body {
 }
 
 
-/* Media query */
-@media screen and (max-width: 860) {
 
-}
 
 @media screen and (max-width: 768px) {
     .hamburger-icon {
@@ -540,10 +536,12 @@ body {
         margin-right: 30px;
     }
     .navbar::before{
-        background-color: #D4822B;
+        display: none;
     }
     .logo img {
-        margin-left: -80px;
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
     }
     .multilenguaje {
       
