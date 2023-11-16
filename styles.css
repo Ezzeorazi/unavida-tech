@@ -688,6 +688,9 @@ body {
         display: none;
       
     }
+    .footer-superior .span3 {
+        display: none;
+    }
     .footer-superior .span1 {
         display: none;
     }
