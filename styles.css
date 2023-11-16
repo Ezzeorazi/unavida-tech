@@ -715,3 +715,22 @@ body {
     
     
 }
+.carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para móviles */
+  @media only screen and (max-width: 767px) {
+    .carousel-item img {
+      /* Se ocultan las imágenes por defecto */
+      display: none;
+    }
+  
+    /* Se muestra la imagen específica para móviles */
+    .carousel-item img.mobile-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
