@@ -74,7 +74,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 5%;
+    width: 45px;
     height: 100%;
     background-color: #2A3336; 
     z-index: -1;
@@ -83,19 +83,19 @@ body {
   .hamburger-icon {
       font-size: 30px;
       cursor: pointer;
-      width: 5%;
+      width: 45px;
       background-color: #2A3336;
       color: #ffffff;
       justify-content: center;
       justify-items: center;
   }
   .hamburger-icon p {
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 35px;
   }
   
   .logo {
-      margin-left: 100px;
+      margin-left: 200px;
   }
   .logo img {
     width: 160px;
@@ -168,10 +168,13 @@ body {
 
 .carrusel {
     position: relative;
-    width: 90%;;
+   
     margin: auto;
     overflow: hidden; 
     max-height: 600px;
+    margin-left: 45px;
+    margin-right: 45px;
+
 }
 
 .slides {
@@ -190,7 +193,7 @@ body {
     width: 70%;
     text-align: start;
     color: #ffffff;
-    font-size: 27px;
+    font-size: 29px;
     margin-bottom: 5px;
     font-weight: bold;
     margin-left: 100px;
@@ -211,7 +214,7 @@ body {
     padding-top: 7px;
     margin-top: 10px;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .cursor {
@@ -231,7 +234,7 @@ body {
     padding-top: 7px;
     margin-top: 10px;
     font-weight: light;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .learn-more-btn {
@@ -259,21 +262,21 @@ body {
 
 .flecha {
     position: flex;
-    margin: 30px;
-    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-.flecha img {
+.flecha-img {
     width: 60px;
     height: 60px;
+  transform: translateY(90%); 
+  margin-left: 15px;
 }
 
 .flecha-text {
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: 30px;
-   
+    margin-bottom: 60px;
 }
 
 .flecha-text h3 {
@@ -324,7 +327,7 @@ body {
     color: #ffffff;
     margin-bottom: 40px;
     font-size: 40px;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.6);
   }
   
   .carousel-text button {
@@ -335,6 +338,7 @@ body {
     border-radius: 15px;
     border: none;
     font-size: 20px;
+    font-family: 'Comfortaa';
   }
 
   .carousel-text2 {
@@ -361,13 +365,12 @@ body {
 
 .flecha-arriba {
     position: absolute; 
-    top: 50%;
-    transform: translateY(-50%); 
-    right: 0;
+    right: 15px;
+    bottom:  -1530px;
 }
 
 .flecha-arriba img {
-    display: block; 
+    
     width: 60px; 
     height: 60px;
 }
@@ -392,12 +395,13 @@ body {
     cursor: pointer;
     background-color: #2A3336;
     color: #ffffff;
-    border-radius: 18px;
+    border-radius: 15px;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     display: block;
     width: 200px;
     margin: 20px auto; 
+    font-family: 'Comfortaa';
 }
 
 .contact-form {
@@ -438,19 +442,29 @@ body {
     display: block;
     width: 110px;
     margin: 20px auto; 
+    font-family: 'Comfortaa';
 }
 
 /* Footer */
 
 .footer-superior {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #D4822B;
     height: 45px;
     color: #ffffff;
     align-items: center;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 45px;
+}
+.footer-superior .span1 {
+    height: 45px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: end;
+    width: 45px;
+    position: absolute;
+    right: 0;
 }
 
 .footer-superior a {
@@ -471,9 +485,13 @@ body {
     color: #ffffff;
     width: 100%;
 }
+
+.footer-inferior p {
+    margin-left: -180px;
+}
 .logo-footer {
     height: 15px;
-    margin-right: 15px;
+    margin-right: 8px;
     margin-left: 60px;
 }
 
@@ -482,7 +500,7 @@ body {
     background-color: #D4822B;
     display: flex;
     justify-content: start;
-    width: 5%;
+    width: 45px;
 }
 
 .footer-inferior .span2 {
@@ -490,7 +508,7 @@ body {
     background-color: #D4822B;
     position: absolute;
     right: 0;
-    width: 5%;
+    width: 45px
 }
 
 .social-media-icons-footer {
@@ -511,6 +529,10 @@ body {
 
 
 /* Media query */
+@media screen and (max-width: 860) {
+
+}
+
 @media screen and (max-width: 768px) {
     .hamburger-icon {
         background-color: #D4822B;
@@ -543,24 +565,23 @@ body {
     .carrusel {
         max-height: 700px;
         width: 100%;
+        margin-left: 0;
     }
-
-
+ 
     .learn-more-btn {
         margin-left: 30px; 
         font-size: 18px;
         bottom: 300px;
     }
     .flecha {
-        margin: 10px;
-        padding-top: 80px;
+        margin-top: 60px;
         display: flex;
         justify-content: center;
+        
     }
 
-    .flecha img{
-        width: 30px;
-        height: auto;
+    .flecha-img{
+       
         display: none;
     }
 
@@ -568,7 +589,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -35px;
     }
     .flecha-text h3 {
         font-size: 15px;
@@ -599,20 +619,13 @@ body {
         margin-top: 0px;
     }
 
-    .flecha-arriba {
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        right: 44%;
-    }
+   
 
     .linea-media{
         width: 150px;
         margin: 0 auto;
     }
     .flecha-arriba img{
-        width: 30px;
-        height: auto;
         display: none;
     }
     .contact-form-container h2{
@@ -636,19 +649,23 @@ body {
 
     .footer-superior {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         background-color: #D4822B;
         height: 45px;
         color: #ffffff;
         align-items: center;
         width: 100%;
         margin: 0;
-        font-size: 12px;
+        font-size: 13px;
     }
     .footer-superior a {
-        margin-left: 5px;
+        margin-left: 0px;
+       
     }
     
+    .footer-superior p {
+        margin-right: 15px;
+    }
   
     .footer-inferior {
         background-color: #2A3336;
@@ -668,10 +685,13 @@ body {
         display: none;
       
     }
-    
+    .footer-superior .span1 {
+        display: none;
+    }
+
     .footer-inferior p{
         font-size: 8px;
-        margin-left: 5px;
+        margin-left: 15px;
     }
     .footer-inferior .span2 {
         display: none;
@@ -681,12 +701,12 @@ body {
         display: flex;
         align-items: center;
         height: 20px;
-        margin-right: 10px;
+        margin-right: 35px;
     }
     
     .social-media-icons-footer img {
         height: 15px;
-        margin-left: 12px;
+        margin-left: 20px;
     }
     
     .social-media-icons-footer img:hover {
