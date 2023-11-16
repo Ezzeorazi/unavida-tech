@@ -533,7 +533,7 @@ body {
     .hamburger-icon {
         background-color: #D4822B;
         color: #2A3336;
-        margin-right: 30px;
+        margin-right: 8px;
     }
     .navbar::before{
         display: none;
