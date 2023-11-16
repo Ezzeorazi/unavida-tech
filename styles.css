@@ -50,6 +50,25 @@ body {
       background-color: #D4822B; 
       z-index: 1; 
   }
+  .multilenguaje {
+    margin-left: auto;
+    padding-right: 15px;
+    color: #ffffff;
+  }
+  .navbar .multilenguaje a {
+    padding: 5px 5px;
+    border: none;
+    background-color: #D4822B;
+    cursor: pointer;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .multilenguaje a:hover {
+    background-color: #a36625;
+  }
+
   .navbar::before {
     content: '';
     position: absolute;
@@ -504,7 +523,11 @@ body {
     .logo img {
         margin-left: -80px;
     }
-    
+    .multilenguaje {
+      
+        padding-right: 0px;
+        margin-right: 0px;
+      }
     .text {
         font-size: 15px; 
         bottom: 400px;
