@@ -779,7 +779,7 @@ body {
     /* Muestra las imágenes móviles en dispositivos móviles */
     .mobile-image {
         display: block;
-        object-fit: cover; /* o como sea necesario para tu diseño */
+        
     }
 }
 
