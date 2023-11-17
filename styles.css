@@ -74,7 +74,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 45px;
+    width: 48px;
     height: 100%;
     background-color: #2A3336; 
     z-index: -1;
@@ -83,7 +83,7 @@ body {
   .hamburger-icon {
       font-size: 30px;
       cursor: pointer;
-      width: 45px;
+      width: 48px;
       background-color: #2A3336;
       color: #ffffff;
       justify-content: center;
@@ -171,8 +171,8 @@ body {
     margin: auto;
     overflow:hidden; 
     max-height: 600px;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 48px;
+    margin-right: 48px;
 }
 
 
@@ -448,7 +448,7 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #D4822B;
-    height: 45px;
+    height: 48px;
     color: #ffffff;
     align-items: center;
     width: 100%;
@@ -456,21 +456,21 @@ body {
 
 
 .footer-superior .span3 {
-    height: 45px;
+    height: 48px;
     background-color: #ffffff;
     display: flex;
     justify-content: start;
-    width: 45px;
+    width: 48px;
     position: absolute;
     left: 0;
 }
 
 .footer-superior .span1 {
-    height: 45px;
+    height: 48px;
     background-color: #ffffff;
     display: flex;
     justify-content: end;
-    width: 45px;
+    width: 48px;
     position: absolute;
     right: 0;
 }
@@ -488,7 +488,7 @@ body {
     background-color: #2A3336;
     display: flex;
     justify-content: space-between;
-    height: 45px;
+    height: 48px;
     align-items: center;
     color: #ffffff;
     width: 100%;
@@ -504,19 +504,19 @@ body {
 }
 
 .footer-inferior span {
-    height: 45px;
+    height: 48px;
     background-color: #D4822B;
     display: flex;
     justify-content: start;
-    width: 45px;
+    width: 48px;
 }
 
 .footer-inferior .span2 {
-    height: 45px;
+    height: 48px;
     background-color: #D4822B;
     position: absolute;
     right: 0;
-    width: 45px
+    width: 48px
 }
 
 .social-media-icons-footer {
@@ -654,7 +654,7 @@ body {
         display: flex;
         justify-content: space-around;
         background-color: #D4822B;
-        height: 45px;
+        height: 48px;
         color: #ffffff;
         align-items: center;
         width: 100%;
@@ -674,7 +674,7 @@ body {
         background-color: #2A3336;
         display: flex;
         justify-content: space-between;
-        height: 45px;
+        height: 48px;
         align-items: center;
         color: #ffffff;
         width: 100%;
@@ -740,3 +740,47 @@ body {
       height: auto;
     }
   }
+
+  /* Estilos por defecto para imágenes de escritorio */
+.desktop-image {
+    display: block; /* o como sea necesario para tu diseño */
+}
+
+/* Oculta las imágenes móviles por defecto */
+.mobile-image {
+    display: none;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) { /* Ajusta a tu punto de corte específico */
+    /* Oculta las imágenes de escritorio en dispositivos móviles */
+    .desktop-image {
+        display: none;
+    }
+
+    /* Muestra las imágenes móviles en dispositivos móviles */
+    /* Estilos por defecto para imágenes de escritorio */
+.desktop-image {
+    display: block; /* o como sea necesario para tu diseño */
+}
+
+/* Oculta las imágenes móviles por defecto */
+.mobile-image {
+    display: none;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) { /* Ajusta a tu punto de corte específico */
+    /* Oculta las imágenes de escritorio en dispositivos móviles */
+    .desktop-image {
+        display: none;
+    }
+
+    /* Muestra las imágenes móviles en dispositivos móviles */
+    .mobile-image {
+        display: block;
+        object-fit: cover; /* o como sea necesario para tu diseño */
+    }
+}
+
+}

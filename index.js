@@ -89,3 +89,4 @@ document.querySelectorAll('.contact').forEach(button => {
     });
   });
 });
+
