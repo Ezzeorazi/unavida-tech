@@ -439,6 +439,36 @@ body {
     font-family: 'Comfortaa';
 }
 
+
+.flecha-arriba {
+    float: right; /* o alternativamente, usar posición absoluta como se muestra abajo */
+    
+    margin-bottom: 25px;
+  }
+  
+  /* Si decides usar posición absoluta, asegúrate de que el contenedor padre tenga `position: relative;` */
+  .contenedor-padre {
+    position: relative;
+  }
+  
+  .flecha-arriba {
+    position: absolute;
+    right: 18px; /* Ajustar según necesidades */
+    bottom: 25px;
+  }
+
+  .flecha-arriba img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .linea-media2 {
+    width: 250px;
+    border-top: 2px solid #000;
+    margin: 15px auto; /* Esto la centra horizontalmente */
+  }
+
+
 /* Footer */
 
 
@@ -628,7 +658,9 @@ body {
         margin-top: 0px;
     }
 
-   
+    .contenedor-padre {
+        display: none;
+    }
 
     .linea-media{
         width: 150px;
