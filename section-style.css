@@ -3,13 +3,21 @@
     margin-left: 15% ;
     font-size: x-large;
 }
-
+.container-quehacemos h2 {
+    margin-top: 100px;
+    margin-left: 15% ;
+    font-size: 38px;
+}
 .container-nosotros img {
     width: 640px;
     height: 347px;
-    margin-left: 3% ;
     margin-top: 35px;
     border-radius: 15px;
+}
+.container-quehacemos img{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
 }
 
 .container-nosotros p {
@@ -64,5 +72,7 @@
     .contact-form-container {
         margin-top: 0;
     }
-    
+    .container-quehacemos h2 {
+        font-size: 25px;
+    }
 }
