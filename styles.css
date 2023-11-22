@@ -358,7 +358,6 @@ body {
     position: relative;
     margin-bottom: 100px;
     margin-top: 30px;
-    margin-right: 25px;
 }
 
 .linea-media {
@@ -695,10 +694,12 @@ body {
     .work-together-btn {
         font-size: 15px;
         margin-bottom: 30px;
+        font-weight: normal;
     }
 
     .submit-btn {
         font-size: 15px;
+        font-weight: normal;
     }
 
     .footer-superior {
