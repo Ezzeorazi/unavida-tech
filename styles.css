@@ -198,7 +198,6 @@ body {
     color: #ffffff;
     font-size: 29px;
     margin-bottom: 5px;
-    font-weight: bold;
     left: 100px;
 }
 
@@ -251,8 +250,8 @@ body {
     background-color: #ffffff; 
     color: #D4822B;         
     border: none;            
-    padding: 8px 18px;   
-    font-size: 25px;
+    padding: 8px 13px;   
+    font-size: 20px;
     cursor: pointer;       
     transition: background-color 0.5s ease; 
     font-weight: 600;    
@@ -565,7 +564,9 @@ body {
 }
 
 
-
+.br {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -593,11 +594,16 @@ body {
         margin-right: 0px;
       }
     .text {
-        font-size: 18px; 
+        font-size: 30px; 
         bottom: 300px;
         width: 95%;
-        left: 20px;
+        left: 10px;
     }
+    
+    .slides .text2 {
+        bottom: 250px;
+    }
+    
     .text1-carrousel {
         font-size: 18px;
     }
@@ -614,7 +620,7 @@ body {
     overflow: hidden;
 }
     .learn-more-btn {
-        font-size: 20px;
+        font-size: 15px;
     }
     .flecha {
         margin-top: 60px;
