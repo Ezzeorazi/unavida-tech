@@ -298,7 +298,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    max-height: 400px;
+    max-height: 600px;
   }
   
   .carousel-slide {
