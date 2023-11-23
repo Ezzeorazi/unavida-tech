@@ -96,3 +96,7 @@ window.addEventListener('load', function() {
     loadingScreen.style.display = 'none';
   }
 });
+
+function onSubmit(token) {
+  document.getElementById("demo-form").submit();
+}

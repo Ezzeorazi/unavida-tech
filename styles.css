@@ -554,6 +554,9 @@ body {
     height: 20px;
     margin-right: 100px;
 }
+    .social-media-icons-footer a{
+    text-decoration: none;
+}
 
 .social-media-icons-footer img {
     height: 20px;

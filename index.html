@@ -6,6 +6,7 @@
     <title>unavida.tech</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="/images/iconos-blanco/favicon-16x16.png">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -115,7 +116,7 @@
   </div>
   <div class="carousel-text">
     <h2>Soluciones tecnológicas <br class="br"> para empresas.</h2>
-    <!-- <button href="#">enviar mi cv</button> -->
+    
   </div>
   
 </div>
@@ -129,29 +130,32 @@
 <!-- Formulario de contacto -->
 <div class="contact-form-container">
   <h2 id="contact">¿Te interesa lo que podemos ofrecerte?</h2>
-  <button class="work-together-btn">trabajemos juntos</button>
-  <form class="contact-form">
+ 
+  <form id="demo-form"  action="hola_procesar_form.php" method="post" class="contact-form">
       <div class="form-group">
                 
-        <input type="text" id="name" placeholder="Nombre y apellido">
+        <input type="text" id="name" placeholder="Nombre y apellido" required>
       </div>
 
       <div class="form-group">
           
-          <input type="email" id="email" placeholder="Email">
+          <input type="email" id="email" placeholder="Email" required>
       </div>
 
       <div class="form-group">
           
-          <input type="tel" id="phone" placeholder="Teléfono">
+          <input type="tel" id="phone" placeholder="Teléfono" required>
       </div>
 
       <div class="form-group">
           
-          <textarea id="message" placeholder="Contanos qué necesitás"></textarea>
+          <textarea id="message" placeholder="Contanos qué necesitás" required></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">enviar</button>
+      <button class="g-recaptcha submit-btn" 
+        	data-sitekey="6Ld-8hUpAAAAACwf-MW4t67jhHOjBLKkuvIazivy" 
+	        data-callback='onSubmit' 
+        	data-action='submit'>Submit</button>
   </form>
   
 </div>

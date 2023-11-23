@@ -20,13 +20,17 @@
 }
 
 .container-nosotros p {
-    width: 65%;
+    text-align: justify;
+    width: 640px;
     font-size: large;
     margin-bottom: 50px;
     margin-top: 35px;
 }
 
-
+.contact-form-container {
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
 
 @media screen and (max-width: 768px) {
     .container-nosotros{
@@ -46,7 +50,8 @@
     }
     
     .container-nosotros p {
-        width: 80%;
+        text-align: start;
+        width: 85%;
         font-size: large;
         margin-bottom: 40px;
         margin-top: 30px;
@@ -56,6 +61,7 @@
     .contact-form-container {
         margin-top: 55px;
         margin-bottom: 40px;
+        
     }
    
   
