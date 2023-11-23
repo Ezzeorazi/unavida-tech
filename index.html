@@ -6,7 +6,7 @@
     <title>unavida.tech</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="/images/iconos-blanco/favicon-16x16.png">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    
 </head>
 <body>
     <div class="navbar">
@@ -131,7 +131,7 @@
 <div class="contact-form-container">
   <h2 id="contact">¿Te interesa lo que podemos ofrecerte?</h2>
  
-  <form id="demo-form"  action="hola_procesar_form.php" method="post" class="contact-form">
+  <form class="contact-form">
       <div class="form-group">
                 
         <input type="text" id="name" placeholder="Nombre y apellido" required>
@@ -152,10 +152,7 @@
           <textarea id="message" placeholder="Contanos qué necesitás" required></textarea>
       </div>
 
-      <button class="g-recaptcha submit-btn" 
-        	data-sitekey="6Ld-8hUpAAAAACwf-MW4t67jhHOjBLKkuvIazivy" 
-	        data-callback='onSubmit' 
-        	data-action='submit'>Submit</button>
+      <button class="submit-btn" >Submit</button>
   </form>
   
 </div>
