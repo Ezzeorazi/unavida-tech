@@ -90,3 +90,9 @@ document.querySelectorAll('.contact').forEach(button => {
   });
 });
 
+window.addEventListener('load', function() {
+  var loadingScreen = document.getElementById('loadingScreen');
+  if (loadingScreen) {
+    loadingScreen.style.display = 'none';
+  }
+});
