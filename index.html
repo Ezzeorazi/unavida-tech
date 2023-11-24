@@ -131,28 +131,49 @@
 <div class="contact-form-container">
   <h2 id="contact">¿Te interesa lo que podemos ofrecerte?</h2>
  
-  <form class="contact-form">
+  <form class="contact-form" id="form">
       <div class="form-group">
                 
-        <input type="text" id="name" placeholder="Nombre y apellido" required>
+        <input  
+        type="text" 
+        id="name" 
+        autocomplete="off" 
+        placeholder="Nombre y apellido" >
+        <p class="alert d-none" id="alert-name">Nombre ingresado no válido</p> 
       </div>
 
       <div class="form-group">
           
-          <input type="email" id="email" placeholder="Email" required>
+          <input  
+          type="email" 
+          id="email" 
+          autocomplete="off" 
+          placeholder="Email">
+           <p class="alert d-none" id="alert-email">Email ingresado no válido</p> 
       </div>
 
       <div class="form-group">
           
-          <input type="tel" id="phone" placeholder="Teléfono" required>
+          <input  
+          type="text" 
+          id="phone" 
+          autocomplete="off" 
+          placeholder="Teléfono">
+           <p class="alert d-none" id="alert-tel">Telefono ingresado no válido</p> 
       </div>
 
       <div class="form-group">
           
-          <textarea id="message" placeholder="Contanos qué necesitás" required></textarea>
+          <textarea 
+          type="text" 
+          id="message" 
+          autocomplete="off" 
+          placeholder="Contanos qué necesitás"></textarea>
+           <p class="alert d-none" id="alert-msg">Mensaje ingresado no válido</p>
       </div>
-
+      
       <button class="submit-btn" >Submit</button>
+      <div class="is-valid d-none" id="alert-success"></div>
   </form>
   
 </div>
@@ -204,5 +225,6 @@
 
 
       <script src="index.js"></script>
+      <script src="formControl.js"></script>
 </body>
 </html>

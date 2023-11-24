@@ -425,6 +425,7 @@ body {
     border-bottom: 1px solid #2A3336; 
     font-size: 15px; 
     font-family: 'Comfortaa';
+
 }
 
 
@@ -850,4 +851,18 @@ body {
     100% { transform: rotate(360deg); }
   }
   
-  
+  .alert {
+    color:red;
+    font-size: 14px;
+    margin-top: 3px;
+  }
+
+ .d-none {
+    display: none;
+    
+ }
+
+ .is-valid{
+    color: green;
+    font-size: 14px;
+ }
